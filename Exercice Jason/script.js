@@ -83,8 +83,8 @@ while(jason.hp>0 && listVivant.length>0){//tant que Jason ets en vie et qu'il re
     }
 }
 
-if(Tueur<=0){//si le tueur meurt, 2 messages s'affichent
-    console.lop("Jason s'est fait tué.");
+if(jason.hp<=0){//si le tueur meurt, 2 messages s'affichent
+    console.log("Jason s'est fait tué.");
     console.log("Les survivants ont gagné, cependant "+ listMort+ " peuvent reposer en paix.");
 }else{//sinon, un message s'affiche avec le nom des personnes tuées
     console.log(listMort + " ont été tués.");
